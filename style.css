@@ -1,0 +1,103 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* header */
+
+
+header {
+  //background-color: hsl(216, 53%, 9%);
+  background-color:  hsl(219, 30%, 18%);
+  color: white;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+.header-icon-text {
+  font-size: 2rem;
+  //align-self: baseline;
+}
+
+
+
+.header-icon img {
+  height: 3rem;
+}
+
+p {
+  font-size: 2rem;
+}
+
+
+header img {
+  height: 4rem;
+  //border: 2px solid yellow;
+}
+
+/* article */
+
+article {
+  background-color: hsl(216, 53%, 9%);
+  font-family: "Josefin Sans", sans-serif;
+  color: white;
+}
+
+.main-image {
+  max-height: 500px;
+}
+
+.main-image img {
+  max-height: 100%;
+}
+
+.fa-star {
+  color: yellow;
+}
+
+.single-product-photo {
+  cursor: pointer;
+}
+
+/* footer */
+
+footer {
+  background-color: hsl(216, 53%, 9%);
+  color: white;
+}
+
+footer img {
+  height: 3rem;
+}
+
+footer {
+  font-family: "Josefin Sans", sans-serif;
+}
+
+.footer-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.footer-list li:not(ul li:first-of-type) {
+  cursor: pointer;
+}
+
+.footer-list li:first-of-type {
+  font-size: 1.2rem;
+}
+
+footer ul li:hover:not(ul li:first-of-type),
+footer ul li:focus:not(ul li:first-of-type) {
+  color: #f79f1f;
+}
+
+.footer-list li:first-of-type {
+  font-weight: bold;
+}
+
+@media (max-width: 600px) {
+  .mobile-margin {
+    margin-bottom: 3rem;
+  }
+}
