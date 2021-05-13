@@ -6,10 +6,9 @@
 
 /* header */
 
-
 header {
-  //background-color: hsl(216, 53%, 9%);
-  background-color:  hsl(219, 30%, 18%);
+  background-color: hsl(191, 79%, 9%);
+
   color: white;
   font-family: "Josefin Sans", sans-serif;
 }
@@ -19,8 +18,6 @@ header {
   //align-self: baseline;
 }
 
-
-
 .header-icon img {
   height: 3rem;
 }
@@ -29,16 +26,20 @@ p {
   font-size: 2rem;
 }
 
-
 header img {
   height: 4rem;
-  //border: 2px solid yellow;
+}
+
+
+.nav-item {
+  font-size: 1.4rem;
+  cursor: pointer;
 }
 
 /* article */
 
 article {
-  background-color: hsl(216, 53%, 9%);
+  background-color: hsl(192, 100%, 9%);
   font-family: "Josefin Sans", sans-serif;
   color: white;
 }
@@ -59,10 +60,66 @@ article {
   cursor: pointer;
 }
 
+.product-detail-text p {
+  font-size: 1.1rem;
+}
+label {
+  padding: 0.5rem;
+  border: 1px solid #dfe6e9;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+input {
+  display: none;
+}
+
+input:checked ~ label {
+  border: 2px solid white;
+  background: white;
+  color: black;
+}
+
+.wishlist-btn {
+  height: 2.5rem;
+  width: 4rem;
+  border: none;
+  border-radius: 2px;
+  background-color: #273c75;
+  color: white;
+}
+
+.cart-btn {
+  background: yellow;
+  border: none;
+  border-radius: 2px;
+  color: navy;
+  height: 2.5rem;
+  width: 6rem;
+}
+
+.test {
+  border: 2px solid green;
+}
+
+.numbers span {
+  border: 2px solid white;
+  width: 2rem;
+  height: 2rem;
+  font-size: 1.2rem;
+  margin-left: 0.5rem;
+}
+
+.numbers span:hover:not(.numbers span:nth-of-type(2)) {
+  background: white;
+  color: hsl(192, 100%, 9%);
+  cursor: pointer;
+}
 /* footer */
 
 footer {
-  background-color: hsl(216, 53%, 9%);
+  background-color: hsl(191, 79%, 9%);
+
   color: white;
 }
 
@@ -89,7 +146,8 @@ footer {
 
 footer ul li:hover:not(ul li:first-of-type),
 footer ul li:focus:not(ul li:first-of-type) {
-  color: #f79f1f;
+  text-decoration: underline;
+  text-underline-position: under;
 }
 
 .footer-list li:first-of-type {
